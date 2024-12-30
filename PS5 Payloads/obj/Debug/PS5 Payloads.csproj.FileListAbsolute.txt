@@ -1,0 +1,10 @@
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5 Payloads.csproj.AssemblyReference.cache
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5_Payloads.Form1.resources
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5_Payloads.Properties.Resources.resources
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5 Payloads.csproj.GenerateResource.cache
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5 Payloads.csproj.CoreCompileInputs.cache
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\bin\Debug\PS5 Payloads.exe.config
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\bin\Debug\PS5 Payloads.exe
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\bin\Debug\PS5 Payloads.pdb
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5 Payloads.exe
+C:\Users\Master\source\repos\PS5 Payloads\PS5 Payloads\obj\Debug\PS5 Payloads.pdb
