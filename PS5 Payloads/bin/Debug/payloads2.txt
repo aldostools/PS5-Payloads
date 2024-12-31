@@ -1,0 +1,9 @@
+BackupDbUser;BackupDbUser.elf
+BackupDB;BackupDB.elf
+B-SAV-PS5_FW_3.00;Backup-SAV-PS5_FW_3.00.elf
+B-SAV-PS5_FW_3.20;Backup-SAV-PS5_FW_3.20.elf
+B-SAV-PS5_FW_3.21;Backup-SAV-PS5_FW_3.21.elf
+B-SAV-PS5_FW_4.02;Backup-SAV-PS5_FW_4.02.elf
+B-SAV-PS5_FW_4.03;Backup-SAV-PS5_FW_4.03.elf
+B-SAV-PS5_FW_4.50;Backup-SAV-PS5_FW_4.50.elf
+B-SAV-PS5_FW_4.51;Backup-SAV-PS5_FW_4.51.elf
