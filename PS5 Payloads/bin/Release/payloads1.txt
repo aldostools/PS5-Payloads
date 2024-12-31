@@ -1,9 +1,10 @@
-etaHEN1.2;etaHEN12.bin
-etaHEN1.3;etaHEN13.bin
-etaHEN1.4;etaHEN14.bin
-etaHEN1.5;etaHEN15.bin
-etaHEN1.6;etaHEN16.bin
-etaHEN1.7;etaHEN17.bin
-etaHEN1.8;etaHEN18.bin
-etaHEN1.9;etaHEN19.bin
-etaHEN_no_toolbox;etaHEN_no_toolbox.bin
+etaHEN1.2;hen\etaHEN12.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.3;hen\etaHEN13.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.4;hen\etaHEN14.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.5;hen\etaHEN15.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.6;hen\etaHEN16.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.7;hen\etaHEN17.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.8;hen\etaHEN18.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN1.9|#ffe;hen\etaHEN19.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN_no_toolbox;hen\etaHEN_no_toolbox.bin;etaHEN 1.9B without toolbox
+HEN 1.00-2.70;hen\byepervisor.elf;PS5 hypervisor exploit for 1.00-2.70 firmware | Specter

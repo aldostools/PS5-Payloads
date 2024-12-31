@@ -16,7 +16,7 @@ namespace PS5_Payloads
 {
     public partial class formMain : Form
     {
-        const string AppVersion = "1.6 MOD";
+        const string AppVersion = "1.6a MOD";
 
         public formMain()
         {
@@ -54,16 +54,31 @@ namespace PS5_Payloads
                 // Process line
                 if (lines[i].Contains(';'))
                 {
+                    Color bgColor = color;
                     var args = lines[i].Split(';');
+                    if (args[0].Contains('|'))
+                    {
+                        var args2 = args[0].Split('|');
+                        args[0] = args2[0];
+                        bgColor = System.Drawing.ColorTranslator.FromHtml(args2[1]);
+                    }
+
                     Button btn = new Button();
                     btn.Size = new Size(width, height);
-                    btn.BackColor = color;
+                    btn.BackColor = bgColor;
                     btn.Top = top;
                     btn.Left = left; left += width + 1; if (left + width > this.Width) { left = leftMargin; top += height + 1; (color, color2) = (color2, color); }
                     btn.Text = args[0];
-                    btn.Tag = args[1];
+                    if(args.Length < 3)
+                        btn.Tag = args[1];
+                    else
+                        btn.Tag = args[1] + ";" + args[2];
                     btn.Click += buttonSendPayload_Click;
+                    btn.MouseHover += new System.EventHandler(this.buttonSendPayload_MouseHover);
                     groupBox.Controls.Add(btn);
+
+                    ToolTip tooltip = new ToolTip();
+                    tooltip.SetToolTip(btn, args[1]);
                 }
             }
         }
@@ -96,7 +111,7 @@ namespace PS5_Payloads
             {
                 this.payloadStatus.ForeColor = Color.Red;
                 this.payloadStatus.Text = payloadPath + " does not exist";
-                MessageBox.Show("Payload nount found.\n", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                MessageBox.Show("Payload not found.\n" + payloadPath, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
         }
         
@@ -126,16 +141,20 @@ namespace PS5_Payloads
         {
             Button obj = (Button)sender;
 
-            string payloadFile = Application.StartupPath + "\\Files\\payloads\\" + obj.Tag.ToString();
+            string payloadFile = obj.Tag.ToString();
+            if (payloadFile.Contains(';'))
+                payloadFile = payloadFile.Split(';')[0];
+
+            string payloadPath = Application.StartupPath + "\\Files\\" + payloadFile;
             try
             {
                 string IP = this.ipbox.Text;
 
                 this.payloadStatus.ForeColor = Color.Blue;
-                this.payloadStatus.Text = "Sending " + obj.Tag.ToString();
+                this.payloadStatus.Text = "Sending " + payloadFile;
                 this.payloadStatus.Refresh();
 
-                SendPayload(IP, payloadFile, Convert.ToInt32(this.portbox.Text));
+                SendPayload(IP, payloadPath, Convert.ToInt32(this.portbox.Text));
 
                 payloadStatus.ForeColor = Color.FromArgb(0, 120, 0);
                 payloadStatus.Text = "Successful. " + obj.Text;
@@ -152,6 +171,21 @@ namespace PS5_Payloads
         {
             MessageBox.Show("PS5 Payloads " + AppVersion + " by master\n\n" +
                             "MOD by aldostools\n", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void buttonSendPayload_MouseHover(object sender, System.EventArgs e)
+        {
+            Button obj = (Button)sender;
+
+            string description = obj.Tag.ToString();
+
+            if (description.Contains(';'))
+                description = description.Split(';')[1];
+            else
+                description = "";
+
+            this.payloadStatus.ForeColor = Color.Navy;
+            this.payloadStatus.Text = description;
         }
 
         private void portbox_KeyPress(object sender, KeyPressEventArgs e)

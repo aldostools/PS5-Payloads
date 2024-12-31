@@ -1,9 +1,9 @@
-BackupDbUser;BackupDbUser.elf
-BackupDB;BackupDB.elf
-B-SAV-PS5_FW_3.00;Backup-SAV-PS5_FW_3.00.elf
-B-SAV-PS5_FW_3.20;Backup-SAV-PS5_FW_3.20.elf
-B-SAV-PS5_FW_3.21;Backup-SAV-PS5_FW_3.21.elf
-B-SAV-PS5_FW_4.02;Backup-SAV-PS5_FW_4.02.elf
-B-SAV-PS5_FW_4.03;Backup-SAV-PS5_FW_4.03.elf
-B-SAV-PS5_FW_4.50;Backup-SAV-PS5_FW_4.50.elf
-B-SAV-PS5_FW_4.51;Backup-SAV-PS5_FW_4.51.elf
+BackupDbUser;backup\BackupDbUser.elf;AllinOne Dumper. Dumps all Database and User files to USB | Storm21CH
+BackupDB;backup\BackupDB.elf;A simple backup Database | logic-68
+B-SAV-PS5_FW_3.00;backup\Backup-SAV-PS5_FW_3.00.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+B-SAV-PS5_FW_3.20;backup\Backup-SAV-PS5_FW_3.20.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+B-SAV-PS5_FW_3.21;backup\Backup-SAV-PS5_FW_3.21.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+B-SAV-PS5_FW_4.02;backup\Backup-SAV-PS5_FW_4.02.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+B-SAV-PS5_FW_4.03;backup\Backup-SAV-PS5_FW_4.03.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+B-SAV-PS5_FW_4.50;backup\Backup-SAV-PS5_FW_4.50.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+B-SAV-PS5_FW_4.51;backup\Backup-SAV-PS5_FW_4.51.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
