@@ -4,13 +4,9 @@ shsrv;payloads\shsrv.elf;telnet-like shell server:2323 | John Törnblom
 ps5debug_dizz;payloads\ps5debug_dizz.elf;PS5 Debugger by dizz
 ps5debug_v1.0b2;payloads\ps5debug_v1.0b2.elf;PS5 Debugger by GoldHEN
 appCache remove;payloads\Browser_appCache_remove.elf;Removes the browser and User Guide appCache for all users
-save mounter;payloads\getbasicsavemounteroffsets.elf;Save mounter for PS5
 ps5 kstuff;payloads\ps5-kstuff.bin;FPKG Support on PS5 | Sleirsgoevy
 libhijacker;payloads\libhijacker-game-patch.v1.160.elf
 klogsrv;payloads\klogsrv.elf;Socket server for /dev/klog | John Törnblom
 gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
-ps5 version;payloads\ps5-versions.elf;Show some version infos of your console | SiSTR0
-rp-get-pin;payloads\rp-get-pin.elf;Get Remote Play pairing PIN for offline activated accounts | idlesauce
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
-ps5-self-decrypter;payloads\ps5-self-decrypter.elf;Decrypt and dump Signed ELFs (SELFs) to USB drive | Specter & idlesauce

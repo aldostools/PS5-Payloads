@@ -41,13 +41,14 @@ namespace PS5_Payloads
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAbout = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.tabMore = new System.Windows.Forms.Button();
             this.tabPayloads = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabBackup = new System.Windows.Forms.Button();
             this.tabHEN = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,6 +77,7 @@ namespace PS5_Payloads
             this.payloadStatus.Size = new System.Drawing.Size(43, 13);
             this.payloadStatus.TabIndex = 134;
             this.payloadStatus.Text = "Status";
+            this.payloadStatus.DoubleClick += new System.EventHandler(this.payloadStatus_DblClick);
             // 
             // label17
             // 
@@ -158,6 +160,7 @@ namespace PS5_Payloads
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 148;
             this.picLogo.TabStop = false;
+            this.picLogo.DoubleClick += new System.EventHandler(this.picLogo_DblClick);
             // 
             // panel1
             // 
@@ -171,7 +174,7 @@ namespace PS5_Payloads
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.btnAbout);
+            this.panel2.Controls.Add(this.tabMore);
             this.panel2.Controls.Add(this.tabPayloads);
             this.panel2.Controls.Add(this.tabBackup);
             this.panel2.Controls.Add(this.tabHEN);
@@ -188,28 +191,17 @@ namespace PS5_Payloads
             this.panel2.Size = new System.Drawing.Size(521, 353);
             this.panel2.TabIndex = 150;
             // 
-            // btnAbout
+            // tabMore
             // 
-            this.btnAbout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAbout.ImageIndex = 3;
-            this.btnAbout.ImageList = this.imageList1;
-            this.btnAbout.Location = new System.Drawing.Point(390, 32);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(127, 32);
-            this.btnAbout.TabIndex = 152;
-            this.btnAbout.UseVisualStyleBackColor = true;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "PS5HEN.png");
-            this.imageList1.Images.SetKeyName(1, "PS5Backup.png");
-            this.imageList1.Images.SetKeyName(2, "PS5Update.png");
-            this.imageList1.Images.SetKeyName(3, "PS5About.png");
-            this.imageList1.Images.SetKeyName(4, "Payload.png");
+            this.tabMore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabMore.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tabMore.Image = ((System.Drawing.Image)(resources.GetObject("tabMore.Image")));
+            this.tabMore.Location = new System.Drawing.Point(390, 32);
+            this.tabMore.Name = "tabMore";
+            this.tabMore.Size = new System.Drawing.Size(127, 32);
+            this.tabMore.TabIndex = 152;
+            this.tabMore.UseVisualStyleBackColor = true;
+            this.tabMore.Click += new System.EventHandler(this.tabMore_Click);
             // 
             // tabPayloads
             // 
@@ -223,6 +215,16 @@ namespace PS5_Payloads
             this.tabPayloads.TabIndex = 150;
             this.tabPayloads.UseVisualStyleBackColor = true;
             this.tabPayloads.Click += new System.EventHandler(this.tabPayloads_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "PS5HEN.png");
+            this.imageList1.Images.SetKeyName(1, "PS5Backup.png");
+            this.imageList1.Images.SetKeyName(2, "PS5Update.png");
+            this.imageList1.Images.SetKeyName(3, "PS5About.png");
+            this.imageList1.Images.SetKeyName(4, "Payload.png");
             // 
             // tabBackup
             // 
@@ -269,12 +271,26 @@ namespace PS5_Payloads
             this.groupBox3.TabIndex = 151;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update";
+            this.groupBox3.Visible = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox4.Location = new System.Drawing.Point(543, 144);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(517, 266);
+            this.groupBox4.TabIndex = 151;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "More";
+            this.groupBox4.Visible = false;
             // 
             // formMain
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(526, 435);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel1);
@@ -282,10 +298,14 @@ namespace PS5_Payloads
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "formMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.formMain_Load);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.formMain_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.formMain_DragEnter);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.formMain_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -312,7 +332,8 @@ namespace PS5_Payloads
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button tabPayloads;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button tabMore;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

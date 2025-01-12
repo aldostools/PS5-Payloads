@@ -7,3 +7,4 @@ B-SAV-PS5_FW_4.02;backup\Backup-SAV-PS5_FW_4.02.elf;Backup the contents of PS5 s
 B-SAV-PS5_FW_4.03;backup\Backup-SAV-PS5_FW_4.03.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
 B-SAV-PS5_FW_4.50;backup\Backup-SAV-PS5_FW_4.50.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
 B-SAV-PS5_FW_4.51;backup\Backup-SAV-PS5_FW_4.51.elf;Backup the contents of PS5 saves to exFAT file system USB drives | logic-68
+save mounter offsets;backup\getbasicsavemounteroffsets.elf;Save mounter for PS5

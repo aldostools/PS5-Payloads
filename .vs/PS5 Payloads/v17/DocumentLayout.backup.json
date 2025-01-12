@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aldo Vargas\\Documents\\GitHub\\PS5-Payloads\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B913B158-E4B4-4C53-93F0-1E3E36A81E93}|PS5 Payloads\\PS5 Payloads.csproj|c:\\users\\aldo vargas\\documents\\github\\ps5-payloads\\ps5 payloads\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B913B158-E4B4-4C53-93F0-1E3E36A81E93}|PS5 Payloads\\PS5 Payloads.csproj|solutionrelative:ps5 payloads\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B913B158-E4B4-4C53-93F0-1E3E36A81E93}|PS5 Payloads\\PS5 Payloads.csproj|C:\\Users\\Aldo Vargas\\Documents\\GitHub\\PS5-Payloads\\ps5 payloads\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B913B158-E4B4-4C53-93F0-1E3E36A81E93}|PS5 Payloads\\PS5 Payloads.csproj|solutionrelative:ps5 payloads\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "formMain.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Aldo Vargas\\Documents\\GitHub\\PS5-Payloads\\PS5 Payloads\\formMain.Designer.cs",
+              "RelativeDocumentMoniker": "PS5 Payloads\\formMain.Designer.cs",
+              "ToolTip": "C:\\Users\\Aldo Vargas\\Documents\\GitHub\\PS5-Payloads\\PS5 Payloads\\formMain.Designer.cs",
+              "RelativeToolTip": "PS5 Payloads\\formMain.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:55:19.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "formMain.cs",
+              "DocumentMoniker": "C:\\Users\\Aldo Vargas\\Documents\\GitHub\\PS5-Payloads\\PS5 Payloads\\formMain.cs",
+              "RelativeDocumentMoniker": "PS5 Payloads\\formMain.cs",
+              "ToolTip": "C:\\Users\\Aldo Vargas\\Documents\\GitHub\\PS5-Payloads\\PS5 Payloads\\formMain.cs",
+              "RelativeToolTip": "PS5 Payloads\\formMain.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAkwJIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T19:37:48.473Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
