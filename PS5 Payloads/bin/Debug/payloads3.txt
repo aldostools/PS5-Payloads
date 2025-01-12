@@ -13,3 +13,4 @@ ps5 version;payloads\ps5-versions.elf;Show some version infos of your console | 
 rp-get-pin;payloads\rp-get-pin.elf;Get Remote Play pairing PIN for offline activated accounts | idlesauce
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
+ps5-self-decrypter;payloads\ps5-self-decrypter.elf;Decrypt and dump Signed ELFs (SELFs) to USB drive | Specter & idlesauce
