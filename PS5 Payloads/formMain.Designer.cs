@@ -119,6 +119,7 @@ namespace PS5_Payloads
             this.portbox.Name = "portbox";
             this.portbox.Size = new System.Drawing.Size(73, 25);
             this.portbox.TabIndex = 143;
+            this.portbox.Text = "9021";
             this.portbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.portbox_KeyPress);
             // 
             // ipbox
