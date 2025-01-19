@@ -6,5 +6,6 @@ etaHEN1.6;hen\etaHEN16.bin;AIO Homebrew enabler for PS5 | LightningMods
 etaHEN1.7;hen\etaHEN17.bin;AIO Homebrew enabler for PS5 | LightningMods
 etaHEN1.8;hen\etaHEN18.bin;AIO Homebrew enabler for PS5 | LightningMods
 etaHEN1.9|#ffe;hen\etaHEN19.bin;AIO Homebrew enabler for PS5 | LightningMods
+etaHEN2.0 Public Beta|#efe;hen\etaHEN20_beta20250218.bin;[Public Beta] AIO Homebrew enabler for PS5 | LightningMods
 etaHEN_no_toolbox;hen\etaHEN_no_toolbox.bin;etaHEN 1.9B without toolbox
 HEN 1.00-2.70;hen\byepervisor.elf;PS5 hypervisor exploit for 1.00-2.70 firmware | Specter
