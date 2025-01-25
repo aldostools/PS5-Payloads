@@ -364,7 +364,10 @@ namespace PS5_Payloads
             payloadStatus.Tag = "";
             count = 0;
 
-            int height = lines.Length <= 13 ? 60 : 30;
+            int height = lines.Length <= 12 ? 60 :
+                         lines.Length <= 15 ? 48 :
+                         lines.Length <= 18 ? 38 :
+                         lines.Length <= 21 ? 34 : 30;
             for (var i = 0; i < lines.Length; i += 1)
             {
                 // Process line
