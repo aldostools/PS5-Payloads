@@ -16,7 +16,7 @@ namespace PS5_Payloads
 {
     public partial class formMain : Form
     {
-        private const string AppVersion = "1.8 MOD";
+        private const string AppVersion = "1.8a MOD";
         private bool sent = false;
         private bool silent = false;
         //private Form f;
@@ -37,7 +37,7 @@ namespace PS5_Payloads
                 portbox.Text = nr.ReadLine();
                 nr.Close();
             }
-            catch (Exception ex) { }
+            catch { }
 
             // load logo.png
             try
@@ -48,7 +48,7 @@ namespace PS5_Payloads
                     picLogo.Image = Image.FromFile(Application.StartupPath + "\\" + "logo.png");
                 }
             }
-            catch (Exception ex) { }
+            catch { }
 
             // process command line arguments
             processCommandLineArguments();
@@ -132,7 +132,7 @@ namespace PS5_Payloads
                     payloadStatus.ForeColor = Color.FromArgb(0, 120, 0);
                     payloadStatus.Text = "Successful. " + Path.GetFileName(payloadFile);
                 }
-                catch (Exception ex)
+                catch
                 {
                     // update status label if failed
                     this.payloadStatus.ForeColor = Color.Red;
@@ -170,11 +170,31 @@ namespace PS5_Payloads
 
             // get payload file name & path (remove optional description after ;)
             string payloadFile = obj.Tag.ToString();
+            string payloadURL = "";
             if (payloadFile.Contains(';'))
-                payloadFile = payloadFile.Split(';')[0];
+            {
+                var items = payloadFile.Split(';');
+                if(items.Count() >= 3)
+                    payloadURL = items[2];
+                else if(items[1].StartsWith("http"))
+                    payloadURL = items[1];
+
+                payloadFile = items[0];
+            }
 
             // send payload & update status label
             string payloadPath = Application.StartupPath + "\\Files\\" + payloadFile;
+
+            if (payloadURL.StartsWith("http"))
+            {
+                try
+                {
+                    WebClient webClient = new WebClient();
+                    webClient.DownloadFile(payloadURL, payloadPath);
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message, "Payload " + payloadFile, MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
+            }
+
             SendPayloadAction(payloadPath);
         }
                 
@@ -345,7 +365,7 @@ namespace PS5_Payloads
                         }
                     }
                 }
-                catch (Exception ex) { }
+                catch { }
 
                 lines = str.Split('\n');
             }
@@ -393,8 +413,10 @@ namespace PS5_Payloads
                     btn.Text = args[0];
                     if (args.Length < 3)
                         btn.Tag = args[1];
-                    else
+                    else if (args.Length <= 3)
                         btn.Tag = args[1] + ";" + args[2];
+                    else
+                        btn.Tag = args[1] + ";" + args[2] + ";" + args[3];
                     btn.Click += buttonSendPayload_Click;
                     btn.MouseHover += new System.EventHandler(this.buttonSendPayload_MouseHover);
                     groupBox.Controls.Add(btn);
@@ -447,7 +469,7 @@ namespace PS5_Payloads
                 else
                     System.Diagnostics.Process.Start(lines[id]);
             }
-            catch (Exception ex)
+            catch
             {
                 // Show error message if failed
                 MessageBox.Show("Ctrl+" + id.ToString() + " has no tool associated.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -478,13 +500,13 @@ namespace PS5_Payloads
                 if (e.Control && (e.KeyCode >= Keys.D1 && e.KeyCode <= Keys.D9))
                     executeTool(e.KeyCode - Keys.D1);
             }
-            catch (Exception ex) { }
+            catch { }
         }
 
         private void payloadStatus_DblClick(object sender, EventArgs e)
         {
             // show file in explorer if Tag is not empty
-            try { showFileInExplorer(payloadStatus.Tag.ToString()); } catch (Exception ex) { }
+            try { showFileInExplorer(payloadStatus.Tag.ToString()); } catch { }
         }
     }
 }
