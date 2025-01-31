@@ -134,10 +134,11 @@ namespace PS5_Payloads
                 }
                 catch
                 {
+                    if (!silent) MessageBox.Show("Payload injection failed.\nSending " + Path.GetFileName(payloadFile), "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+
                     // update status label if failed
                     this.payloadStatus.ForeColor = Color.Red;
                     this.payloadStatus.Text = "Payload injection failed. " + Path.GetFileName(payloadFile);
-                    if(!silent) MessageBox.Show("Payload injection failed.\nSending " + Path.GetFileName(payloadFile), "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 }
             }
             else
@@ -189,8 +190,22 @@ namespace PS5_Payloads
             {
                 try
                 {
+                    string tempPath = Application.StartupPath + "\\Files\\temp.bin";
+
+                    this.payloadStatus.ForeColor = Color.Blue;
+                    this.payloadStatus.Text = "Downloading " + Path.GetFileName(payloadFile);
+
                     WebClient webClient = new WebClient();
-                    webClient.DownloadFile(payloadURL, payloadPath);
+                    webClient.DownloadFile(payloadURL, tempPath);
+
+                    if(File.Exists(tempPath))
+                    {
+                        if (File.Exists(payloadPath))
+                        {
+                            File.Delete(payloadPath);
+                        }
+                        File.Move(tempPath, payloadPath);
+                    }
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message, "Payload " + payloadFile, MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
             }
