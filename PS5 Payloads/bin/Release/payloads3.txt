@@ -11,3 +11,4 @@ kstuff.elf;payloads\kstuff.bin;kstuff for 3.00-4.51 | John Törnblom
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
 gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
+airpsx|#eff;payloads\airpsx.elf;Remote Console Management via a Web Desktop | Port 1214
