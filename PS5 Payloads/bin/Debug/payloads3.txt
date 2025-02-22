@@ -12,3 +12,4 @@ elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
 gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
 airpsx|#eff;payloads\airpsx.elf;Remote Console Management via a Web Desktop | Port 1214
+ps5 self decrypter;payloads\ps5-self-decrypter.elf;Decrypt PS5 SELF files to USB drive (3.xx-7.xx)
