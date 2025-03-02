@@ -9,7 +9,8 @@ libhijacker;payloads\libhijacker-game-patch.v1.160.elf
 klogsrv;payloads\klogsrv.elf;Socket server for /dev/klog | John Törnblom
 kstuff.elf;payloads\kstuff.bin;kstuff for 3.00-4.51 | John Törnblom
 kstuff_5.10;payloads\kstuff_5.10.elf;kstuff for 5.10 | EchoStretch, Zecoxao & key friend
+kstuff_5.50;payloads\kstuff_5.50.elf;kstuff for 5.50 | EchoStretch, Zecoxao & key friend
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
-gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
 airpsx|#eff;payloads\airpsx.elf;Remote Console Management via a Web Desktop | Port 1214
 Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
+gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
