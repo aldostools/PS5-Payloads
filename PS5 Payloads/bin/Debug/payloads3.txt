@@ -7,7 +7,7 @@ appCache remove;payloads\Browser_appCache_remove.elf;Removes the browser and Use
 kstuff;payloads\ps5-kstuff.bin;FPKG Support on PS5 | Sleirsgoevy + EchoStretch (5.xx)
 libhijacker;payloads\libhijacker-game-patch.v1.160.elf
 klogsrv;payloads\klogsrv.elf;Socket server for /dev/klog | John Törnblom
-ps5 kstuff;payloads\kstuff.elf; FPKG Support on PS5 3.xx-5.xx | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
+ps5 kstuff;payloads\kstuff.elf; FPKG Support on PS5 3.xx-6.50 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
 airpsx|#eff;payloads\airpsx.elf;Remote Console Management via a Web Desktop | Port 1214
