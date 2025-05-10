@@ -9,5 +9,7 @@ ps5 kstuff 1.5;payloads\kstuff.elf; FPKG Support on PS5 3.xx-7.61 | Sleirsgoevy 
 klogsrv;payloads\klogsrv.elf;Socket server for /dev/klog | John Törnblom
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
-Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
+webkit cache remover;payloads\ps5-webkit-cache remover-v1.01.elf;PlayStation 5 WebKit Cache Remover | Vladimir Cucu
 airpsx|#eff;payloads\airpsx.elf;Remote Console Management via a Web Desktop | Port 1214
+pkg_install|#eff;payloads\pkg_install.elf;Package Install application | John Törnblom
+Enable/Disable Update|#cff;payloads\Enable-Disable-UPD-PS5v1.0.3.elf;Enable or disable your PS5 updates
