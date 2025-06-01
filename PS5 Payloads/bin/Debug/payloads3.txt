@@ -8,7 +8,7 @@ libhijacker;payloads\libhijacker-game-patch.v1.160.elf
 ps5 kstuff 1.5;payloads\kstuff.elf; FPKG Support on PS5 3.xx-7.61 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
 klogsrv;payloads\klogsrv.elf;Socket server for /dev/klog | John Törnblom
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
-gdsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
+gdbsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
 webkit cache remover;payloads\ps5-webkit-cache-remover-v1.02.elf;PlayStation 5 WebKit Cache Remover | Vladimir Cucu
 airpsx|#eff;payloads\airpsx.elf;Remote Console Management via a Web Desktop | Port 1214
 pkg_install|#eff;payloads\pkg_install.elf;Package Install application | John Törnblom
