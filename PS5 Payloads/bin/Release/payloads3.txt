@@ -2,7 +2,7 @@ ftpsrv;payloads\ftpsrv.elf;FTP server:2121 | John Törnblom
 websrv|#ffe;payloads\websrv.elf;Web server:8080 | John Törnblom
 shsrv;payloads\shsrv.elf;telnet-like shell server:2323 | John Törnblom
 ps5debug_dizz;payloads\ps5debug_dizz.elf;PS5 Debugger by dizz
-ps5debug_v1.0b3;payloads\ps5debug_v1.0b3.elf;PS5 Debugger by GoldHEN for 3.xx-5.xx
+ps5debug_v1.0b4;payloads\ps5debug_v1.0b4.elf;PS5 Debugger by GoldHEN for 3.xx-6.xx
 appCache remove;payloads\Browser_appCache_remove.elf;Removes the browser and User Guide appCache for all users
 libhijacker;payloads\libhijacker-game-patch.v1.160.elf
 ps5 kstuff 1.5;payloads\kstuff.elf; FPKG Support on PS5 3.xx-7.61 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
