@@ -5,7 +5,7 @@ ps5debug_dizz;payloads\ps5debug_dizz.elf;PS5 Debugger by dizz
 ps5debug_v1.0b5;payloads\ps5debug_v1.0b5.elf;PS5 Debugger by GoldHEN for 3.xx-6.xx
 appCache remove;payloads\Browser_appCache_remove.elf;Removes the browser and User Guide appCache for all users
 libhijacker;payloads\libhijacker-game-patch.v1.160.elf
-ps5 kstuff 1.6;payloads\kstuff.elf; FPKG Support on PS5 3.xx-8.00 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
+ps5 kstuff 1.6;payloads\kstuff.elf; FPKG Support on PS5 3.xx-8.20 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
 klogsrv;payloads\klogsrv.elf;Socket server for /dev/klog | John Törnblom
 elfldr;payloads\elfldr.elf;ELF loader | John Törnblom
 gdbsrv;payloads\gdbsrv.elf;Remote debugger | John Törnblom
