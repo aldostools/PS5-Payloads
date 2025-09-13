@@ -12,5 +12,5 @@ etaHEN2.1B;hen\etaHEN21.bin;AIO Homebrew enabler for PS5 1.xx-7.xx | LightningMo
 etaHEN2.2B;hen\etaHEN22.bin;AIO Homebrew enabler for PS5 1.xx-7.xx | LightningMods
 etaHEN2.3B|#cfc;hen\etaHEN23.bin;AIO Homebrew enabler for PS5 1.xx-8.xx | LightningMods
 HEN 1.00-2.70;hen\byepervisor.elf;PS5 hypervisor exploit for 1.00-2.70 firmware | Specter
-ps5 kstuff 1.6.3;payloads\kstuff.elf; FPKG Support on PS5 3.xx-9.00 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
+ps5 kstuff 1.6.4;payloads\kstuff.elf; FPKG Support on PS5 3.xx-9.60 | Sleirsgoevy + EchoStretch, Zecoxao, Buzzer, idlesauce, BestPig
 kstuff toggle|#cee;hen\kstuff-toggle.elf;Kstuff toggle | EchoStretch
